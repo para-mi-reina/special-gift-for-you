@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+    flex-direction: column;
+}
+
+.message-container {
+    display: none; /* Sembunyikan dulu, nanti muncul saat hadiah dibuka */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('2022021112012654218.png'); /* Ganti dengan gambar lain */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gift-box {
+    width: 150px; /* Sesuaikan dengan ukuran GIF */
+    height: auto; /* Menyesuaikan tinggi secara otomatis */
+    cursor: pointer;
+    background-image: url('10589.jpg'); /* Ganti dengan gambar hadiah */
+    background-size: cover;
+    border-radius: 10px;
+    cursor: pointer
+}
+
+.message {
+    display: none; /* Awalnya disembunyikan */
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.confetti {
+    position: absolute;
+    top: 0;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100vh) rotate(0deg);
+        opacity: 1;
+    }
+    90% {
+        opacity: 1; /* Tetap terlihat hampir sampai akhir */
+    }
+    100% {
+        transform: translateY(120vh) rotate(720deg); /* Jatuh lebih jauh */
+        opacity: 0;
+    }
+}
+

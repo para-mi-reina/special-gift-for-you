@@ -1,0 +1,254 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000vh;
+    background-color: #ffe0f0;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    color: #d63384;
+    text-align: center;
+    flex-direction: column;
+}
+.gift-container {
+    margin-top: 50px;
+}
+
+.message {
+    margin-top: 50px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Tulisan Hati */
+.heart-text {
+    margin-top: 100px;
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+}
+
+.heart-text span {
+    display: block;
+    animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+        color: pink;
+    }
+}
+.message-container {margin-top: 100px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    min-height: 1.000px;
+    width: 100%;}
+    
+.message-title {
+    font-size: 28px;
+    color: red;
+}
+
+.message-text {
+    font-size: 20px;
+    color: black;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.message-title {
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 10px #ff0000, 0 0 20px 
+    #ff7300, 0 0 30px #ff7300, 0 0 40px #ff0000;
+    animation: glow 1.5s infinite alternate;
+}
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px #ff0000, 0 0 20px 
+        #ffD700, 0 0 30px #ffD700, 0 0 40px #ff0000;
+    }
+    100% {
+        text-shadow: 0 0 20px #ffd700, 0 0 30px 
+        #ffd700, 0 0 40px #ff0000, 0 0 50px #ff0000;
+    }
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffe0f0;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    color: #d63384;
+    text-align: center;
+    flex-direction: column;
+}
+
+.gift-container {
+    position: relative;
+    cursor: pointer;
+}
+
+#gift-box {
+    width: 150px;
+    transition: transform 0.5s ease-in-out;
+}
+
+#ball-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+.ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: fall 0s linear forwards;
+}
+@keyframes fall {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(100vh); opacity: 0; }
+}
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 4.0px; 
+    padding: 20px;
+    text-align: center;
+    overflow: visible;
+}
+.falling-heart {
+    position: absolute;
+    top: 0;
+    font-size: 24px;
+    animation: fall 5s linear infinite;
+}
+
+@keyframes fall {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(100vh); opacity: 0; }
+}
+.gift-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    animation: textGlow 2s infinite alternate;
+}
+
+@keyframes textGlow {
+    0% { text-shadow: 0 0 5px rgb(255, 215, 0); }
+    100% { text-shadow: 0 0 15px yellow; }
+}
+.romantic-text {
+    font-family: 'Dancing Script', cursive; 
+    font-size: 26px;
+    font: weight 0;;
+    color: #ff4d4d; 
+    text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.5);
+}
+body {
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4);
+    background-size: 400% 400%;
+    animation: gradientBG 8s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.heart-container {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 3px 3px 6px rgba(255, 0, 0, 0.5);
+}
+
+.heart-text span {
+    display: block;
+    animation: fadeIn 2s ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.row1 { animation-delay: 0.5s; }
+.row2 { animation-delay: 1s; }
+.row3 { animation-delay: 1.5s; }
+.row4 { animation-delay: 2s; }
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.heart-text {
+    animation: floating 3s infinite ease-in-out;
+}
+@keyframes rainbowBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+.row5 {
+    font-size: 24px;  
+    font-weight: bold;
+    color: #ff4d4d; 
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+}
+
