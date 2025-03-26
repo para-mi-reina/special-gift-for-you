@@ -148,14 +148,13 @@ body {
     100% { transform: translateY(100vh); opacity: 0; }
 }
 .message {
+    overflow: visible;
+    min-height: 2000px; /* Bisa disesuaikan */
+    height: auto; /* Agar bisa bertambah sesuai konten */
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    min-height: 4.0px; 
-    padding: 20px;
-    text-align: center;
-    overflow: visible;
+    align-items: center;
 }
 .falling-heart {
     position: absolute;
@@ -237,7 +236,15 @@ body {
 
 .heart-text {
     animation: floating 3s infinite ease-in-out;
-}
+    overflow: visible;
+    min-height: 2000px; /* Bisa disesuaikan */
+    height: auto; /* Agar bisa bertambah sesuai konten */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    
 @keyframes rainbowBackground {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
@@ -252,3 +259,4 @@ body {
     margin-top: 10px;
 }
 
+   
